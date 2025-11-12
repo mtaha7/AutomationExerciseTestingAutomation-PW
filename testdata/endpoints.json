@@ -1,0 +1,20 @@
+[
+    {
+        "endPoint": "Cities",
+        "resource": "/MasterDataLookup/GetCities",
+        "paramValue":"SAU"
+    },
+    {
+        "endPoint": "ApiTests",
+        "resource": "/api/v1/ApiTests"
+    },
+    {
+        "endPoint": "Countries",
+        "resource": "/MasterDataLookup/GetCountries"
+    },
+    {
+        "endPoint": "Nationalities",
+        "resource": "/MasterDataLookup/GetNationalities"
+    }
+]
+
