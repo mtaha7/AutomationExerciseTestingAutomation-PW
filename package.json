@@ -1,10 +1,11 @@
 {
-  "name": "unifiedsolutionstestingautomation-pw",
+  "name": "automationexercisetestingautomation-pw",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "chromeTest": "npx playwright test --project=chrome",
+    "uiTest": "npx playwright test SignUpAndLoginTest.spec.js --project=chrome",
+    "apiTest": "npx playwright test APITests.spec.js --project=api",
     "play-report": "npx playwright show-report"
   },
   "keywords": [],

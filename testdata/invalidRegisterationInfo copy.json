@@ -1,0 +1,17 @@
+{
+    "name": "Testing",
+    "email": "Testing@domain.com",
+    "password": "P@ssw0rd",
+    "title": "Mr",
+    "birth_date": "5",
+    "birth_month": "September",
+    "birth_year": "1991",
+    "company": "Company",
+    "address1": "Dummy",
+    "address2": "Dummy",
+    "country": "United States",
+    "zipcode": "123",
+    "state": "Arizona",
+    "city": "Texas",
+    "mobile_number": "01001234569"
+}

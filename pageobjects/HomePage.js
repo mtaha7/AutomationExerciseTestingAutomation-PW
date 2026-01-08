@@ -5,16 +5,26 @@ class HomePage {
     constructor(page) {
 
         this.page = page
-        this.welocomeMsg = page.locator('h1', { hasText: 'Welcome To Mumaris' })
-        this.logOutBtn = page.locator('span', { hasText: 'Log Out' })
+        this.signUpAndLoginBtn = page.locator("a[href*='login']")
+        this.logOutBtn = page.locator("a[href*='logout']")
+        this.deleteAccountBtn = page.locator("a[href*='delete_account']")
+        this.AccountDeletedMsg = page.locator("h2[data-qa='account-deleted']")
     }
 
-    async validateSuccessfullLogin() {
-        await expect(this.welocomeMsg).toBeVisible()
+    async navigateToSignUpAndLoginPage() {
+        console.log("Clicking on Sign Up And Login Button")
+        await this.signUpAndLoginBtn.click()
     }
 
-    async appLogout() {
+    async accountLogout() {
+        console.log("Clicking on Log out Button")
         await this.logOutBtn.click()
+    }
+
+    async deleteAccount() {
+        console.log("Clicking on Delete Account Button")
+        await this.deleteAccountBtn.click()
+        await expect(this.AccountDeletedMsg).toBeVisible()
     }
 
 }

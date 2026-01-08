@@ -1,4 +1,4 @@
-const {LoginPage} = require('../pageobjects/LoginPage')
+const {SignUpAndLoginPage} = require('../pageobjects/SignUpAndLoginPage')
 const {HomePage} = require('../pageobjects/HomePage')
 
 
@@ -7,13 +7,13 @@ class POManager {
     constructor (page) {
 
         this.page = page
-        this.LoginPage = new LoginPage(this.page)
+        this.SignUpAndLoginPage = new SignUpAndLoginPage(this.page)
         this.HomePage = new HomePage(this.page)
 
     }
 
-    getLoginPage () {
-        return this.LoginPage
+    getSignUpAndLoginPage () {
+        return this.SignUpAndLoginPage
     }
 
     getHomePage () {

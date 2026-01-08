@@ -1,0 +1,7 @@
+
+    {
+        "createAccount": "/createAccount",
+        "deleteAccount": "/deleteAccount",
+        "verifyLogin": "/verifyLogin"
+    }
+

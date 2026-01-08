@@ -5,7 +5,7 @@ require('dotenv').config()
 
 export default defineConfig({
   testDir: './tests',
-  timeout: 120 * 1000,
+  timeout: 60 * 1000,
   expect: {
     timeout: 30 * 1000
   },
@@ -43,6 +43,12 @@ export default defineConfig({
         trace: 'on-first-retry',
         browserName: 'webkit',
         headless: false
+      }
+    },
+    {
+      name: 'api',
+      use: {
+        trace: 'on-first-retry'
       }
     }
   ],
